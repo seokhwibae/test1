@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>스크립트 PW</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\PC\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><html><head><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body></body></html>
+    </head>
+    <body for="html-export" >
+      <div class="crossnote markdown-preview  "  >
+      
+<h2 id="도입부">도입부 </h2>
+<p>여보세요~ 네 안녕하세요 OOO대표님 맞으시죠?<br>
+다름이 아니라 대표님 ( 업체명 ) 홈페이지 검색어 담당해드리는 루드 검색어 담당자입니다.<br>
+현재 ( 업체명 ) 홈페이지가 다음쪽에서는 검색이 잘 되고 있는데<br>
+이번에 플랫폼 이전 되면서 네이버랑 카카오톡에서도 검색이 잘 되게끔<br>
+안내 연락 한 번 드린거구요!</p>
+<details>
+    <summary> <b>안해요,광고안해요,광고전화죠?</b> </summary>
+<h4 id="안해요">안해요 </h4>
+<p>대표님 뭐 가입하라고 연락드린거 아니구요 대표님 기존에 가지고 계신 홈페이지 있으시잖아요?<br>
+(대부분 대답함) 현재 홈페이지가 다음쪽에서는 검색이 잘 되고 있으신데 이번에 플랫폼 이전  되시면서 네이버랑 카카오톡에서도 검색이 잘 되시게끔 안내연락 한 번 드린거구요!</p>
+<h4 id="광고안해요-광고전화죠">광고안해요, 광고전화죠? </h4>
+<p>대표님 광고하라고 연락드린거 아니구요 대표님 기존에 가지고 계신 홈페이지 있으시잖아요?  (대부분 대답함) 현재 홈페이지가 다음쪽에서는 검색이 잘 되고 있으신데<br>
+이번에 플랫폼 이전되시면서 네이버랑 카카오톡에서도 검색이 잘 되시게끔 안내연락 한 번 드린거구요!</p>
+<hr>
+</details>
+<details>
+<summary><b>다음에 할게요</b></summary>
+<p><em>너가 선택하는거지만 안하면 너 손해라 넌 무조건 해야된다. 사실상 너한테는 선택권이 없는거다 라는느낌 주기</em></p>
+<p>대표님 저희가 본사에서 비즈머니 쿠폰 지원이 나오고 있기 떄문에  대표님 클릭당비용 면제가 가능하신거고<br>
+지원이 안나오는데 이런 클릭당 비용 면제를 드리면 저희가 자선사업가도 아니고 당연히 불가능하죠<br>
+근데 가능하시기 떄문에 이렇게 자신있게 말씀을 드리는겁니다!</p>
+<h4 id="반론1">반론1 </h4>
+<p>하지만 이것도 광고비용으로 빠져나가시는게 아니라 말씀드렸던거처럼 모든 대표님들도<br>
+납부하시는 자릿세 개념이세요 다른대표님들께서는 모든 광고비용까지 다 납부를하시지만,<br>
+대표님께서는 기존 광고 이용주시기 때문에 이런 광고비용들을 전액 다 면제 해드리는거구요~</p>
+<h4 id="반론2">반론2 </h4>
+<p>대표님 근데 이거는 꼭 해주셔야 되시는게 대표님께서는 말씀드린데로 자릿세 개념으로<br>
+서버연결비용만 나오시는거고 광고비용 면제 받아보시면서 광고효과는 광고비용 내가면서<br>
+광고하시는 다른대표님들과 똑같이 효과 보실 수 있는거라 안하실이유가 없으시죠</p>
+<h4 id="반론3">반론3 </h4>
+<p>대표님 이거는 꼭 해주셔야 되시는게 다른 대표님들께서는 홈페이지 제작 이후에 다 검색어<br>
+등록하시고 효과 보고 계시는데 대표님께서는 아직 상호명(업체이름급)으로만 검색되셔서  효과를 못 보고 계시고 있으신건데,<br>
+하지만 대표님께서는 다른대표님과는 다르게 비용 절감혜택 받아보시면서<br>
+효과는 효과대로 똑같이 보실 수 있으신거라 이거는 꼭 해주셔야 되세요!</p>
+<h4 id="반론4">반론4 </h4>
+<p>대표님 혜택자체를 누구한테나 다 드리면 서로 경쟁만 되고 의미가 없잖아요?<br>
+(대답 듣지말고 넘어가기) 그래서 @@@저희가 지역별 업종별 신규로 등록하는 새업체 한해서만<br>
+지원혜택건을 드리는거구요.@@@ 지원권 자체가 한정적이기 때문에 지원권이 다른 대표님들께<br>
+넘어가면 그때 가서는 지원권 자체가 다 소모 됐기 때문에 하고 싶으셔도 신규1년차에 받아볼 수<br>
+있는 비용 절감 혜택없이 하셔야 되는데 그렇게 하시게 되면 너무 아깝잖아요....</p>
+<hr>
+</details>
+<details>
+<summary><b>(홈페이지 있으시죠? 라고 먼저 말한 경우) 거기 홈페이지 제작사라고요?</b></summary>
+<h4 id="뭐라뭐라-홈페이지가지고-뭐라하면">뭐라뭐라 홈페이지가지고 뭐라하면 </h4>
+<p>아 대표님 그분은 홈페이지 제작 담당자시구요 제작사 통해서 홈페이지 제작은 다 되셨고 , 검색어<br>
+담당자는 저여서 제가 연락드린거구요 저는 루드 검색어 담당자입니다.</p>
+<h4 id="반론2-1">반론2 </h4>
+<p>그리고 제가 검색어를 읽어드릴 수 있는 이유는 홈페이지 만들면 누구나 무료로 등록할 수 있는<br>
+상호명 밑에 빈공간이 있으신데 거기를 설명란이라고 하는데요 제작사쪽에서 검색어 등록을<br>
+해준다는거는 제가 방금 말씀드린 설명란 여기에 해준다는거구요. 지금도 검색해보면 아시겠지만<br>
+당시에 지정해주셨던 검색단어 검색창에 검색해보시면 안나오시는거 확인 가능하신데 이걸 나올 수<br>
+있게 해주는게 저희 업무에요.</p>
+<h4 id="반론3-1">반론3 </h4>
+<p>대표님 음식점가시면 음식을 만들어주고 , 골프장가면 골프치게 해주는 것 처럼 홈페이지 제작사는 홈페이지를 만들어주고 나서 상호명으로 나오게끔 해주는거고, 대표님께서 원하시는 000으로<br>
+쳤을 때 대표님께서 가지고 계신 홈페이지 나오게 하는거를 검색어 등록이라고 하는데요<br>
+이 업무는 검색어 등록사에서만 해드릴 수 있는부분이세요. 쉽게 설명 드리면 대표님 께서 음식점에<br>
+가셨는데 여기에서 골프치고 싶다는건 말이 안되는 것 처럼 이것도 똑같이 검색어등록 부분은 검색어<br>
+등록사에서만 해줄 수 있는 부분이신거에요</p>
+</details>
+<br>
+<p>앞으로는 당시에 지정하셨던 검색단어가 (aaa,bbb,ccc) 이렇게 있는데 이렇게 검색했을때도<br>
+네이버,다음,카카오에서 <strong>맨 위에 나오실 수 있게끔</strong> 검색단어 등록이 될거구요<br>
+제가 방금 말씀드린 검색 단어 외적으로 변동사항이나 추가사항 따로 있으실까요?(대답듣고)<br>
+네 그러면 변동 사항 없이 검색 단어 검수 넣어드리겠습니다. 확인 감사드리구요!<br>
+저는 말씀드린 데로 검색어 담당자라서 전화 드린거구요~<br>
+내일모레부터는 제가 방금 말씀드린 검색 단어로 검색해 보셔도<br>
+맨 위에 잘 나오시는 거 확인 가능하실 겁니다~</p>
+<h2 id="월-비용-및-약정-설명">월 비용 및 약정 설명 </h2>
+<p>대표님도 아시다시피 네이버 맨 위에 올리는 게 한 달에 몇 십만원씩 나오시는 자리잖아요?<br>
+하지만 대표님께서는 기존 광고 이용주시기 때문에 이런 광고 비용들은 전액 다 면제해 드릴 거구요</p>
+<br>
+<p>올라갈 때 모든 대표님들께서도 기본적으로 납부해주셔야 하는 서버 연결 비용이라고<br>
+자릿세 개념으로 월 51,000원 비용 발생 하시는 것만 있으신데,<br>
+대표님께는 오래 이용해달라는 의미로<br>
+첫 1년 동안은 신규 지원 혜택 받아보셔서 월 11,000원만 발생이 될 거구요 (적용)<br>
+신규 1년이 지나면 서버 연결 비용은 다시 51,000원으로 돌아오시지만,<br>
+대표님께서는 <strong>최대 5년</strong>까지, 이런 혜택 받아보실 수 있으시고,</p>
+<p>( 업체명 )은 신규로 지정하는 지원 대상업체이기 때문에<br>
+추가로 좀 더 혜택 받아 보실 수 있는 게 ~<br>
+40만원 상당의 블로그와, 20만원 상당의 카카오톡 배너 광고 및 다음 프리미엄 링크까지<br>
+<strong>무료로</strong> 지원이 나가는 거구요</p>
+<p>우리 동네 BTV 라고 해서 세달 동안 대표님 지역 쪽으로 티비 광고 노출되시는 거 있는데<br>
+그것도 저희가 영상 다 제작해서 티비광고 송출까지 <strong>세달동안 서비스 도와드릴 거니까</strong> 그 부분도<br>
+참고해주시구요!</p>
+<details>
+<summary><b>채널 반박</b></summary>
+<p>skt 브로드밴드랑 제휴 맺어 있어서 skt 티비 쓰시는 분들 해서 대표님 지역 쪽 채널 있잖아요?<br>
+지역 채널쪽으로 티비 프로그램 끝나면 중간중간 가게 홍보 나가는 거 그쪽에 들어가시는 거에요</p>
+</details>
+<hr>
+<p>오늘 자로는 간단하게 정보 확인 지정 접수 까지 도와드릴거구~</p>
+<h2 id="접수">접수 </h2>
+<p>통화하시는 대표님 성함 확인 한번 부탁드리겠습니다.</p>
+<p>네이버로 등록하기 위해서 사업자등록번호 확인 한 번 부탁드리겠습니다.<br>
+(사업자등록번호는 통화 끝나기 전에 받아도 됨)</p>
+<p>사업자등록번호  :</p>
+<p>네 확인 감사합니다.</p>
+<h2 id="카드-받기">카드 받기 </h2>
+<p>그리고 안내해 드린 대로 서버 연결 비용 나오시는 부분 있으시잖아요?<br>
+여태까지 위험성이 많았던 자동이체나, 현금성 거래로 이루어지는 게 아니고,<br>
+앞으로는 정보통신부에 지정된 8개의 신용카드사를 통해서 다달이 나가실 수 있게끔 명의 확보까지<br>
+도와드릴 거구요~ 오늘 등록 처리 해드리면 다음 달부터 다달이 분납 처리되실 거예요.<br>
+<strong>그래서 대표님 등록은 어떤 카드사가 편하실까요?</strong></p>
+<details>
+<summary><b>카드 반론</b></summary>
+<h4 id="카드로-안한다-현금-or-계좌이체로-하겠다">카드로 안한다, 현금 or 계좌이체로 하겠다 </h4>
+<p>대표님 계좌이체,자동이체 같은거를 현금성거래, 1대1거래라고 하는데요! 1대1거래<br>
+자체가 보이스피싱이랑 사기피해 노출 위험성이 너무 크다보니까 본사자체에서 승인이 나오지 않으세요ㅠㅠ<br>
+그래서 저희가 1대1거래가 아닌 제3자거래로 중간에 신용카드사를 끼고 안전하게 매월 매월 분납되실 수 있게끔 도와드리는겁니다!</p>
+<h4 id="반론2-2">반론2 </h4>
+<p>대표님 저희가 임의대로 카드를 받는게 아니고, 솔직히 대표님꼐서도 사업하셔서 아시겠지만<br>
+사업하는사람들이 현금을 좋아하지 카드 좋아하는 사람이 누가 있겠어요... 저희도 카드 수수료까지 부담해가면서 안그러고 싶습니다...ㅠㅠ<br>
+근데 저희도 이게 본사자체에서 위험성이 너무커서 승인이 안나오는거라 조금전에 말씀드렸다시피 중간에 신용카드사를 끼고 제3자거래로 안전하게 분납 될수 있게끔 등록처리 도와 드리는겁니다!</p>
+<h4 id="반론3-2">반론3 </h4>
+<p>대표님 오늘자로 분납되시는 금액은 없으시구요!  Ex) 통화당시 월요일로 예시<br>
+오늘 등록처리 해드리면 수요일이나 목요일부터 잘 나와있는거 확인 가능하시니까<br>
+나오시는거 눈으로 효과한번 먼저 잘 지켜보시다가<br>
+대표님 다음달 카드 결제일부터 분납해주시면 되시는거라<br>
+등록처리만 빠르게 도와 드리겠습니다. (이후 자연스럽게 다시 카드시도 들어가기!)</p>
+</details>
+<p>카드사   :</p>
+<p>XX카드 OOO 대표님 개인신용카드 /  맞으신가요? (대답) 네 확인 감사드립니다</p>
+<p>현재 <strong>통화가 녹취되고 있기 때문에</strong> 카드 비밀번호 4자리나 cvc 번호는 발설하시면 안 되시구요.<br>
+카드번호 앞 16자리랑 유효기간까지만 확인 부탁드리겠습니다~</p>
+<details>
+<summary><b>비번멘트</b></summary>
+<h4 id="본인인-경우">본인인 경우 </h4>
+<p>대표님~ OO 카드가 소유주분이 000대표님 맞으신지 절차상 본인 확인 한번 도와드릴 거구요. 000 대표님</p>
+<p>생년월일 6자리만 확인 부탁드리겠습니다.<br>
+네 확인 감사드리구요 마지막으로 조금 전에 말씀드린 데로 카드 앞 비밀번호 4자리는 말씀해 주시면<br>
+안되시구요 앞에 2자리만 확인 부탁드리겠습니다</p>
+<h4 id="본인이-아닌-경우">본인이 아닌 경우 </h4>
+<p>대표님~ OO카드가 소유주분이 본인이 아니기 때문에 절차상 본인확인 도와드릴거구요.<br>
+카드 소유주분 <strong>생년월일 6자리만</strong> 확인 부탁드리겠습니다.<br>
+네 확인 감사드리구요 마지막으로 조금전에 말씀드린데로 카드 앞 비밀번호 4자리는 <strong>말씀하시면 안되시구요</strong> 앞에 2자리만 확인부탁드리겠습니다</p>
+<h4 id="이거-말하면-큰일나는거-아니야-생년월일비번앞2자리">이거 말하면 큰일나는거 아니야? (생년월일,비번앞2자리) </h4>
+<p>대표님! 휴대폰으로도 본인인증 할 때 생년월일 입력 후 휴대폰 번호로 인증번호 받으시잖아요?<br>
+대표님 신용카드도 똑같이 본인확인차</p>
+<ol>
+<li>비밀번호 앞 2자리가 필요하세요 전체 4자리를 불러주시는게 아니라서 걱정 안해주셔도 되십니다.</li>
+<li>생년월일 앞6자리까지만 확인부탁드리는겁니다</li>
+</ol>
+</details>
+<p>확인 감사드리며 제가 팀장님께 통화 넘겨 드리겠습니다. 잠시만 기다려 주세요!<br>
+<strong>(본부장님이나 대표님께 콜 넘기기!)</strong></p>
+<h2 id="결제고지-스크립트-내용-그대로-말하되-빨리-전달">결제고지 (스크립트 내용 그대로 말하되 빨리 전달) </h2>
+<p>확인 감사드리며,<br>
+금일자로 말씀주신 OO 카드사 통해서 등록 처리 도와드릴거구여,<br>
+1년동안 월 11,000원이시고 그 이후 부터 5년까지는 51,000원이십니다.<br>
+5년을 다 사용하시면 총금액은 258만원이시고,<br>
+해당 금액 부분이 부가세가 전부 다 포함이 되어있으신 부분이시라 연말에  공제받아보실수있게끔 카드전표<br>
+넣어드릴거고 오늘자로는 총금액결제승인처리 되시지만 일시불로 처리 되진 않으니 걱정  안해주셔도 되시고,<br>
+다음달 결제일부터 OO개월 가맹점 최대 개월수로 매월매월 분납해주시면 되는 부분이십니다</p>
+<h2 id="약관-스크립트-내용-그대로-말하되-빨리-전달">약관 (스크립트 내용 그대로 말하되 빨리 전달) </h2>
+<p>그리고 최종적으로 유선거래이시다보니까 전자상 거래법에 의거하여서<br>
+약관 브리핑 진행 좀 도와드릴게요<br>
+이용약관은 녹취 진행되시는 점 참고부탁드리며 안내 도와드립니다.</p>
+<p>이용약관은 5년 약정 지원기간동안 상품 결제 금액 내에서<br>
+당사 루드에서 지정 키워드에 대해 관리 및 집행 들어가시고<br>
+블로그 제작 및 ip 티비 광고는 착수단계 완료되어서<br>
+빠르게 받아보실 수 있도록 바로 제작 들어가시구요<br>
+홈페이지 및 블로그 등 제작솔루션은 추후 추가적으로 가입이 가능하십니다.<br>
+단 이런 솔루션들은 제작도중에는 환급이 불가능하시다는 점 고지해드리며.</p>
+<p>40만원상당에 블로그 제작 및 월 20만원 상당 ip 티비광고 받아보시는 대표님께서는<br>
+지원약정기간 5년동안에 제작 및 집행 비용<br>
+전액 면제로 받아가시는 부분이시고 중도해지시 위약금20%와<br>
+무료제작 들어갔던 약정상품은 환급이 불가능하시다는점 고지해드렸고</p>
+<p>약관에 대해서 구두상으로 간단하게 설명 드렸고<br>
+등록확인서에 녹취 발췌한 내용 및 상세한 내용 기재 되어있으니까<br>
+참고 해주시면 되십니다.</p>
+<h2 id="마무리">마무리 </h2>
+<p>네 긴통화 수고많으셨구요 대표님!<br>
+오늘자로는 승인 됐다고 '루드'로 문자 한 통 가실 수 있는데<br>
+그거는 저희 루드에서 정상적으로 접수가 됐다는거니까 너무 놀라지 마시고,<br>
+관련하여 궁금한거 있으시면 이 번호로 저한테  연락 부탁드리며,<br>
+통화가 끝나는대로 제가 명함이랑, 당사와 채팅으로 편하게 연락 주고 받으실 수 있는<br>
+카카오채널 등 안내 문자 보내드릴거구요!</p>
+<p>이렇게 지정접수 처리는 마무리 되셨구 광고 작업 착수단계는 완료가 되셔서<br>
+오늘 즉시 작업은 들어갈겁니다만, 말씀드렸던 검색단어 검수기간이<br>
+영업일 기준 2~3일 정도 소요되는 점 양해 부탁드리겠구요<br>
+요청해주시면 제가 직접 사진 찍어서 자료 빠짐없이 보내드리니까<br>
+문자나 카카오톡으로 편하게 확인해주시면 되십니다!</p>
+<details>
+<summary><b>사업자 등록번호 안물어봤으면</b></summary>
+<p>그리고 대표님 마지막으로 네이버 등록하기 위해서 사업자등록번호 확인 부탁드리겠습니다! (받아적기) ex) 000-00-00000<br>
+네 확인감사합니다~</p>
+<p>긴통화수고많으셨구요 좋은하루되세요!</p>
+</details>
+
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+  </html>
